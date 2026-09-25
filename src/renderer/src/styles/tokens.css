@@ -1,0 +1,69 @@
+/* 设计令牌：深色为默认，浅色通过 [data-theme='light'] 覆盖。
+   字体大小由设置注入到 --font-size（根元素内联设置）。 */
+:root {
+  --font-size: 14px;
+  --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', 'PingFang SC', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 14px;
+
+  --bg: #0a0c11;
+  --bg-chrome: #0e1117;
+  --bg-panel: #11141b;
+  --bg-elev: #161a22;
+  --bg-elev-2: #1c212b;
+  --bg-hover: rgba(255, 255, 255, 0.045);
+  --bg-active: rgba(255, 255, 255, 0.075);
+
+  --border: rgba(255, 255, 255, 0.075);
+  --border-strong: rgba(255, 255, 255, 0.14);
+
+  --text: #e7ebf3;
+  --text-dim: #a6adbd;
+  --text-muted: #7b8397;
+
+  --accent: #5b8cff;
+  --accent-soft: rgba(91, 140, 255, 0.14);
+  --accent-2: #a06bff;
+  --ok: #38d39f;
+  --ok-soft: rgba(56, 211, 159, 0.13);
+  --warn: #f0a53a;
+  --warn-soft: rgba(240, 165, 58, 0.14);
+  --err: #ff6b6b;
+  --err-soft: rgba(255, 107, 107, 0.14);
+
+  --shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+  --scrollbar: rgba(255, 255, 255, 0.14);
+}
+
+[data-theme='light'] {
+  --bg: #f6f7f9;
+  --bg-chrome: #ffffff;
+  --bg-panel: #ffffff;
+  --bg-elev: #f2f4f7;
+  --bg-elev-2: #e9ecf1;
+  --bg-hover: rgba(15, 23, 42, 0.04);
+  --bg-active: rgba(15, 23, 42, 0.07);
+
+  --border: rgba(15, 23, 42, 0.09);
+  --border-strong: rgba(15, 23, 42, 0.18);
+
+  --text: #161a22;
+  --text-dim: #4a5365;
+  --text-muted: #6b7484;
+
+  --accent: #2f6bff;
+  --accent-soft: rgba(47, 107, 255, 0.1);
+  --accent-2: #7c4dff;
+  --ok: #0f9d68;
+  --ok-soft: rgba(15, 157, 104, 0.12);
+  --warn: #b8761b;
+  --warn-soft: rgba(184, 118, 27, 0.12);
+  --err: #d64545;
+  --err-soft: rgba(214, 69, 69, 0.12);
+
+  --shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+  --scrollbar: rgba(15, 23, 42, 0.2);
+}

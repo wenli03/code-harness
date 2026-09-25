@@ -1,0 +1,13 @@
+node_modules/
+out/
+dist/
+release/
+coverage/
+*.log
+*.tsbuildinfo
+# 本机私有的 Provider 密钥（用 npm run seed:providers 注入到应用设置）
+providers.local.json
+.DS_Store
+Thumbs.db
+.env
+.env.local
